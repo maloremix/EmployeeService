@@ -1,0 +1,31 @@
+CREATE TABLE Companies
+(
+    Id SERIAL PRIMARY KEY,
+    Name VARCHAR(255) NOT NULL,
+    Phone VARCHAR(20)
+);
+
+CREATE TABLE Departments
+(
+    Id SERIAL PRIMARY KEY,
+    Name VARCHAR(255) NOT NULL,
+    Phone VARCHAR(20)
+);
+
+CREATE TABLE Passports
+(
+    Id SERIAL PRIMARY KEY,
+    Type VARCHAR(20) NOT NULL,
+    Number VARCHAR(20) NOT NULL
+);
+
+CREATE TABLE Employees
+(
+    Id SERIAL PRIMARY KEY,
+    Name VARCHAR(255) NOT NULL,
+    Surname VARCHAR(255) NOT NULL,
+    Phone VARCHAR(20),
+    CompanyId INT REFERENCES Companies(Id),
+    DepartmentId INT REFERENCES Departments(Id),
+    PassportId INT REFERENCES Passports(Id)
+);
