@@ -4,14 +4,73 @@
     "C:\\Users\\iapar\\source\\repos\\Employees\\Employees\\Employees.csproj": {}
   },
   "projects": {
-    "C:\\Users\\iapar\\source\\repos\\Employees\\Employees\\Employees.csproj": {
+    "C:\\Users\\iapar\\source\\repos\\Employees\\Employees.BLL\\Employees.BLL.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\iapar\\source\\repos\\Employees\\Employees\\Employees.csproj",
-        "projectName": "Employees",
-        "projectPath": "C:\\Users\\iapar\\source\\repos\\Employees\\Employees\\Employees.csproj",
+        "projectUniqueName": "C:\\Users\\iapar\\source\\repos\\Employees\\Employees.BLL\\Employees.BLL.csproj",
+        "projectName": "Employees.BLL",
+        "projectPath": "C:\\Users\\iapar\\source\\repos\\Employees\\Employees.BLL\\Employees.BLL.csproj",
         "packagesPath": "C:\\Users\\iapar\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\iapar\\source\\repos\\Employees\\Employees\\obj\\",
+        "outputPath": "C:\\Users\\iapar\\source\\repos\\Employees\\Employees.BLL\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\iapar\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "C:\\Users\\iapar\\source\\repos\\Employees\\Employees.DAL\\Employees.DAL.csproj": {
+                "projectPath": "C:\\Users\\iapar\\source\\repos\\Employees\\Employees.DAL\\Employees.DAL.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.401\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\iapar\\source\\repos\\Employees\\Employees.DAL\\Employees.DAL.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\iapar\\source\\repos\\Employees\\Employees.DAL\\Employees.DAL.csproj",
+        "projectName": "Employees.DAL",
+        "projectPath": "C:\\Users\\iapar\\source\\repos\\Employees\\Employees.DAL\\Employees.DAL.csproj",
+        "packagesPath": "C:\\Users\\iapar\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\iapar\\source\\repos\\Employees\\Employees.DAL\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\iapar\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -40,6 +99,83 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "dependencies": {
+            "Dapper": {
+              "target": "Package",
+              "version": "[2.1.21, )"
+            },
+            "Npgsql": {
+              "target": "Package",
+              "version": "[7.0.6, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.401\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\iapar\\source\\repos\\Employees\\Employees\\Employees.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\iapar\\source\\repos\\Employees\\Employees\\Employees.csproj",
+        "projectName": "Employees",
+        "projectPath": "C:\\Users\\iapar\\source\\repos\\Employees\\Employees\\Employees.csproj",
+        "packagesPath": "C:\\Users\\iapar\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\iapar\\source\\repos\\Employees\\Employees\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\iapar\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "C:\\Users\\iapar\\source\\repos\\Employees\\Employees.BLL\\Employees.BLL.csproj": {
+                "projectPath": "C:\\Users\\iapar\\source\\repos\\Employees\\Employees.BLL\\Employees.BLL.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "AutoMapper": {
+              "target": "Package",
+              "version": "[12.0.1, )"
+            },
+            "AutoMapper.Extensions.Microsoft.DependencyInjection": {
+              "target": "Package",
+              "version": "[12.0.1, )"
+            },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
               "version": "[6.5.0, )"
